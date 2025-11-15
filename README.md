@@ -6,7 +6,7 @@
 ## 3. Instalar o Django e suas dependencias
 - TBD
 ## 4. Instalar o Postman
-- TBD
+- [TBD](https://www.postman.com/downloads/)
 ## 5. Rodar o Projeto
 - TBD
 
@@ -14,7 +14,7 @@
 ## Treinadores
 ### Adicionar Treinador
 #### Request
-
+- POST /api/treinadores/
 #### Response
 ```
 HTTP 201 Created
@@ -30,7 +30,6 @@ Vary: Accept
     "atualizado_em": "2025-11-15T18:39:59.600133Z"
 }
 ```
-
 
 # API
 ## Pokemon API
