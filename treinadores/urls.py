@@ -5,4 +5,3 @@ router = DefaultRouter()
 router.register(r'treinadores', TreinadorViewSet)
 
 urlpatterns = router.urls
-

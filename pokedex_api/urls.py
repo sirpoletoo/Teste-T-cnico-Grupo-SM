@@ -23,4 +23,3 @@ urlpatterns = [
     # Inclui as URLs geradas pelo DRF Router da aplicação treinadores
     path('api/', include('treinadores.urls')),
 ]
- 
