@@ -1,22 +1,44 @@
+# O que é uma API?
+Uma API (Application Programming Interface) é um intermediário que permite a dois softwares se comunicarem.
+
+Ela define um conjunto de regras (como URLs, métodos HTTP e formato de dados) que um aplicativo usa para solicitar serviços ou informações de outro.
+
+No desenvolvimento web com Django, a API é o que permite que seu frontend (navegador/app) obtenha e envie dados para o backend (servidor Django).
+
+# o que é esse projeto?
+Este projeto é uma API RESTful de Pokédex desenvolvida como um desafio técnico, utilizando Python 3.11+, Django 5+ e Django Rest Framework. A aplicação gerencia o CRUD completo de Treinadores e Pokémons, implementando a relação muitos-para-muitos entre eles. Além disso, inclui a lógica de negócio para simulação de batalhas e integra-se à PokeAPI para enriquecimento de dados. Os dados são persistidos utilizando PostgreSQL.
+
 # Como rodar o Projeto
-## 1. Instalar o PostGRES
+## 1. Instalar o Python
+- Link do Python 3.11: https://www.python.org/downloads/
+
+## 2. Instalar o Django e criando o ambiente virtual
+Rodar todos os comandos no terminal
+- Criação do ambiente virtual: python -m venv venv
+- Ativação do Ambiente Virtual:
+macOS/Linux: source venv/bin/activate
+Windows (PowerShell): .\venv\Scripts\Activate.ps1
+Windows (Cmd/Prompt de Comando): venv\Scripts\activate.bat
+- Instalação do Django: pip install django
+- Instalação da lib do postgreSQL: pip install psycopg2-binary
+
+## 3. Instalar o PostGRES
 - Link do PostGRES: https://www.postgresql.org/download/
-## 2. Instalar o Python
-- TBD
-## 3. Instalar o Django e suas dependencias
-- TBD
+
 ## 4. Instalar o Postman
-- [TBD](https://www.postman.com/downloads/)
+- [Link para o Postman](https://www.postman.com/downloads/)
+
 ## 5. Rodar o Projeto
-- TBD
+- Para rodar o servidor e testar os endpoints: python manage.py runserver
 
 # Exemplos de Requests e Responses
 ## Treinadores
-- [Endpoints Treinador](./collection/Endpoints%20Treinador%20-%20postman_collection.json)
+- [Collection Postman endpoints treinador](./collection/Endpoints%20Treinador%20-%20postman_collection.json)
 ### Adicionar Treinador
 #### Request
 POST/http://127.0.0.1:8000/api/treinadores/
     ```
+
     {
     "nome": "Ash Ketchum",
     "idade": 10
