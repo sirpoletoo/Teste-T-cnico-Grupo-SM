@@ -12,24 +12,31 @@
 
 # Exemplos de Requests e Responses
 ## Treinadores
+- [Endpoints Treinador](./collection/Endpoints%20Treinador%20-%20postman_collection.json)
 ### Adicionar Treinador
 #### Request
-- POST /api/treinadores/
+POST/http://127.0.0.1:8000/api/treinadores/
+    ```
+    {
+    "nome": "Ash Ketchum",
+    "idade": 10
+    }
+    ```
 #### Response
-```
-HTTP 201 Created
-Allow: GET, POST, HEAD, OPTIONS
-Content-Type: application/json
-Vary: Accept
+    ```
+    HTTP 201 Created
+    Allow: GET, POST, HEAD, OPTIONS
+    Content-Type: application/json
+    Vary: Accept
 
-{
-    "id": 5,
-    "nome": "Silvério",
-    "idade": 30,
-    "criado_em": "2025-11-15T18:39:59.600111Z",
-    "atualizado_em": "2025-11-15T18:39:59.600133Z"
-}
-```
+    {
+        "id": 5,
+        "nome": "Silvério",
+        "idade": 30,
+        "criado_em": "2025-11-15T18:39:59.600111Z",
+        "atualizado_em": "2025-11-15T18:39:59.600133Z"
+    }
+    ```
 
 # API
 ## Pokemon API

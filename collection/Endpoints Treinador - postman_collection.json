@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "1c739687-1a8b-4680-8250-9ed3d69b84d2",
+		"name": "Pokedex API - Teste Técnico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49915178",
+		"_collection_link": "https://guilherme-guirezende-475100.postman.co/workspace/Guilherme-Poleto's-Workspace~dcfac508-809d-442f-818d-3d2a9080b113/collection/49915178-1c739687-1a8b-4680-8250-9ed3d69b84d2?action=share&source=collection_link&creator=49915178"
+	},
+	"item": [
+		{
+			"name": "Treinador",
+			"item": [
+				{
+					"name": "Criar Novo Treinador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Ash Ketchum\",\r\n    \"idade\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/treinadores/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"treinadores",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Todos Treinadores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/treinadores/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"treinadores",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Treinador por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/treinadores/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"treinadores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Treinador",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idade\": 11\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/treinadores/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"treinadores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar Treinador",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/treinadores/3/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"treinadores",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
