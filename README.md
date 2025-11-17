@@ -21,6 +21,7 @@ Windows (PowerShell): .\venv\Scripts\Activate.ps1
 Windows (Cmd/Prompt de Comando): venv\Scripts\activate.bat
 - Instalação do Django: pip install django
 - Instalação da lib do postgreSQL: pip install psycopg2-binary
+- Instalação do DRF: pip install djangorestframework
 
 ## 3. Instalar o PostGRES
 - Link do PostGRES: https://www.postgresql.org/download/
