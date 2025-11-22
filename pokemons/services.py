@@ -23,7 +23,7 @@ class PokeAPIService:
 
         except requests.exceptions.HTTPError as e:
             # Tratar o erro 404
-            if response.status_code == 400:
+            if response.status_code == 404:
                 # Gera uma exceção personalizada no Serializer
                 raise ValueError(f"Pokémon '{nome_pokemon}' não encontrado na PokeAPI")
             

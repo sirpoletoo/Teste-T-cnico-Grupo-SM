@@ -32,6 +32,9 @@ Windows (Cmd/Prompt de Comando): venv\Scripts\activate.bat
 ## 5. Rodar o Projeto
 - Para rodar o servidor e testar os endpoints: python manage.py runserver
 
+## 6. Para rodar os testes, use:
+- python manage.py test
+
 # Exemplos de Requests e Responses
 ## Treinadores
 - [Collection Postman endpoints treinador](collectionEndpoints%20Treinador%20-%20postman_collection.json)
