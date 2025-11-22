@@ -36,7 +36,7 @@ class BatalhaView(APIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
         # Regra de negócio: Ganha o Pokémon que tiver o maior peso
-        vendedor = None
+        vencedor = None
         mensagem = "Empate! (Mesmo peso)"
 
         if p1.peso > p2.peso:
@@ -44,7 +44,7 @@ class BatalhaView(APIView):
             mensagem = f"{p1.nome} venceu {p2.nome} nesse duelo eletrizante!"
         elif p2.peso > p1.peso:
             vencedor = p2.nome
-            mensagem = f"{p2.nome} venceu {p2.nome} nesse duelo incrível!"
+            mensagem = f"{p2.nome} venceu {p1.nome} nesse duelo incrível!"
         
         return Response({
             "pokemon_1": {"nome": p1.nome, "peso": f"{p1.peso}hg"},
